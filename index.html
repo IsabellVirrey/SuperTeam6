@@ -79,9 +79,9 @@
                 </li>
 
                 <li class="card1">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
+                <h3>........</h3> 
+                <img src="" alt="weather-icon">
+                <h4>Temp: <span class="2"></span></h4>
                 <h4>Wind: <span class="3"></span></h4>
                 <h4>Humidity: <span class="4"></span></h4>
                 <h4>Level: <span class="5"></span></h4>
@@ -149,6 +149,27 @@
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
+
+  <!-- Sarah trying js fetch request in html -->
+      <script>
+        const API_KEY = "42fc323d-4d1a-441d-a3cf-f4cf388c4ed2";
+        const latitude = "";
+        const longitude = "";
+        const OPENCHARGE_URL = `https://api.openchargemap.io/v3/poi/?output=json&key=${API_KEY}&latitude=${latitude}&longitude=${longitude}&distance=5`
+
+        fetch(OPENCHARGE_URL)
+        .then(function(response)
+        {
+          return response.json();
+        })
+        .then(function(data){
+          console.log(data);
+          console.log(latitude);
+          console.log(longitude);
+        })
+        
+      </script>
+
 
     <script src="./assets/js/script.js"></script>
   </body>
