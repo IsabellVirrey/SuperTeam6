@@ -1,17 +1,28 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+header {
+padding: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color: darkcyan;
+color: white;
+}
+
+/*
 html{
   background-color: rgb(252, 252, 252);
   height: 100%;
 }
+*/
 
 .main-layout{
   display: flex;
@@ -22,7 +33,7 @@ html{
 .weather-input
 {
   width: 450px;
-  border: 3px red solid;
+  border: 3px white;
 }
 
 .weather-input input
