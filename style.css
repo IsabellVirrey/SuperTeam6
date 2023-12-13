@@ -1,0 +1,129 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-color: rgb(252, 252, 252);
+  height: 100%;
+}
+
+.main-layout{
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+}
+
+.weather-input
+{
+  width: 450px;
+  border: 3px red solid;
+}
+
+.weather-input input
+{
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border: 2px rgb(225, 214, 214) solid;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+.weather-input button
+{
+width: 100%;
+padding: 10px,0;
+cursor: pointer;
+outline: none;
+background-color: cyan;
+border-radius: 2px;
+
+}
+.weather-input .separator
+{
+  border-top: 2px black solid;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-input .separator::before
+{
+  content: "or";
+  font-size: 1.18rem;
+  padding: 0 15px;
+  
+}
+
+.weather-data
+{
+  width: 100%;
+  
+
+  
+}
+.current-weather
+{
+  border-radius: 5px;
+  border: 2px rgb(0, 255, 60) solid;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  background-color: aquamarine;
+
+}
+
+
+.current-weather .weather-icon
+{
+  margin-left: 50px;
+}
+.current-weather .weather-icon img{
+  max-width: 120px;
+  margin-top: -15px;
+}
+
+
+
+.card img{
+  max-width: 80px;
+  margin-top: 5px 0 -12px 0;
+}
+
+.days-forecast h2
+{
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.weather-cards
+{
+  display: flex;
+  gap: 20px;
+}
+
+.weather-cards .card{
+  background: rgb(54, 42, 165);
+  color: whitesmoke;
+  padding: 18px 16px;
+  border-radius: 6px;
+}
+
+
+/*
+ <div class ="days-forecast">
+              <h2> 5-Day Forecast</h2>
+              <ul class="weather-cards">
+                <li class="card">
+                  <h3>(12/08/2023)</h3>  
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                  <h4>Temp: 76.62</h4>
+                  <h4>Wind: 100</h4>
+                  <h4>Humidity: 300</h4>
+                </li>
+
+
+*/
