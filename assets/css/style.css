@@ -4,10 +4,12 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -15,6 +17,21 @@ padding: 20px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 background-color: darkcyan;
 color: white;
+}
+
+img {
+width: 60%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: darkcyan;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 /*
@@ -45,13 +62,14 @@ html{
   border-radius: 5px;
   margin: 10px 0 10px 0;
 }
+
 .weather-input button
 {
 width: 100%;
 padding: 10px,0;
 cursor: pointer;
 outline: none;
-background-color: cyan;
+background-color: darkcyan;
 border-radius: 2px;
 
 }
@@ -81,10 +99,10 @@ border-radius: 2px;
 .current-weather
 {
   border-radius: 5px;
-  border: 2px rgb(0, 255, 60) solid;
+  border: darkcyan solid;
   padding: 10px 20px 10px 10px;
   display: flex;
-  background-color: aquamarine;
+  background-color: lightgray;
 
 }
 
