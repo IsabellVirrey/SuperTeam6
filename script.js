@@ -129,11 +129,11 @@ function getCitylocation()
            }
         
            for (let index = 0; index < butt_arr.length; index++) {
-            console.log(butt_arr[index]+"----");
+          //  console.log(butt_arr[index]+"----");
             
            }
         
-           console.log(butt_arr.length+"----");
+        //   console.log(butt_arr.length+"----");
        
           localStorage.setItem('city', JSON.stringify(cityList));
           console.log(cityList.length+" length");
@@ -208,8 +208,8 @@ function getHistory() {
   $('.histBtn').on("click", function (event) {
 		event.preventDefault();
  
-    console.log($(this).attr('id'));
-    console.log($(this).text());
+   // console.log($(this).attr('id'));
+   // console.log($(this).text());
 
     getWeather(parsedObject[$(this).attr('id')].cityName,parsedObject[$(this).attr('id')].latitude,parsedObject[$(this).attr('id')].longtitude);
     getForecast(parsedObject[$(this).attr('id')].latitude,parsedObject[$(this).attr('id')].longtitude);
@@ -224,3 +224,17 @@ function getHistory() {
 
 searchButton.addEventListener('click',getCitylocation);
 current_Location.addEventListener('click',getUserCoordinates);
+
+const API_KEY1 = "42fc323d-4d1a-441d-a3cf-f4cf388c4ed2";
+const latitude1 = "37.335480";
+const longitude1 = "-121.893028";
+const OPENCHARGE_URL = `https://api.openchargemap.io/v3/poi/?output=json&key=${API_KEY1}&latitude=${latitude1}&longitude=${longitude1}&distance=5&maxresults=5`
+fetch(OPENCHARGE_URL)
+.then(function(response)
+{
+  return response.json();
+})
+.then(function(data){
+  console.log(data);
+  console.log(data[0].AddressInfo.Title)
+})
