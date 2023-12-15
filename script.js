@@ -97,7 +97,7 @@ function getCitylocation()
       
         var cityName = cityInput.value.trim();
         if(!cityName) return; 
-        const GEO_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+        const GEO_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
 
         fetch(GEO_URL)
         .then(function(response){
