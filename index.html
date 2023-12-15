@@ -18,24 +18,22 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Weather Dashboard</title>
   </head>
 
-  <header>
-
-    <h1 class="heading">Weather Dashboard</h1>
-    <h5 class="heading">
-      <span  id ="time-display"></span>
-    </h5>
-
-  </header>
   <body>
-    
+
+    <header>
+      <h1>Welcome to Chargepoint  </h1>
+    </header>
+
     <div class ="main-layout">
 
       <div class ="weather-input"> 
-        <h3>Search for a city: </h3>
+        <h3>Search for a charger: </h3>
         <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
         <button class="search-btn">Search</button>
         <div class="separator"></div>
@@ -43,7 +41,6 @@
         <div class="container cityHist">
           
         </div>
-
         </div>
 
         
@@ -56,76 +53,111 @@
                 <h4>Temp: <span class="2"></span></h4>
                 <h4>Wind: <span class="3"></span></h4>
                 <h4>Humidity: <span class="4"></span></h4>
+                <h4>Level: <span class="5"></span></h4>
+                <h4>Distance from you: <span class="6"></span></h4>
+                <h4>Address: <span class="7"></span></h4>
               </section>
               <section class ='weather-icon'>
-                <img src="" alt="weather-icon">
+                <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
                 <h4>........</h4>
               </section>
           </div>
 
             <!----------------------------------------------------------------->
+<!-- -->
+          <div class ="Chargers">
+            <h2> Chargers near you: </h2>
+            <ul class="weather-cards">
+              <li class="card0">
+                <h3>........</h3> 
+                <img src="assets/images/icons8-charging-station-50.png" alt="black charger icon">
+                <h4>Level: <span class="5"></span></h4>
+                <h4>Distance from you: <span class="6"></span></h4>
+                <h4>Address: <span class="7"></span></h4>
+              </li>
 
-            <div class ="days-forecast">
-              <h2> 5-Day Forecast</h2>
-              <ul class="weather-cards">
-                <li class="card0">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
-                  <h4>Wind: <span class="3"></span></h4>
-                  <h4>Humidity: <span class="4"></span></h4>
-                </li>
+              <li class="card1">
+              <h3>........</h3> 
+              <img src="assets/images/icons8-charging-station-50.png" alt="black charger icon">
+              <h4>Level: <span class="5"></span></h4>
+              <h4>Distance from you: <span class="6"></span></h4>
+              <h4>Address: <span class="7"></span></h4>
+              </li>
 
-                <li class="card1">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
-                <h4>Wind: <span class="3"></span></h4>
-                <h4>Humidity: <span class="4"></span></h4>
-                </li>
+              <li class="card2">
 
-                <li class="card2">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
-                  <h4>Wind: <span class="3"></span></h4>
-                  <h4>Humidity: <span class="4"></span></h4>
-                </li>
+                <h3>........</h3>
+                <img src="assets/images/icons8-charging-station-50.png" alt="black charger icon">
+                <h4>Level: <span class="5"></span></h4>
+                <h4>Distance from you: <span class="6"></span></h4>
+                <h4>Address: <span class="7"></span></h4>
+              </li>
 
-                <li class="card3">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
-                  <h4>Wind: <span class="3"></span></h4>
-                  <h4>Humidity: <span class="4"></span></h4>
-                </li>
+              <li class="card3">
+                <h3>........</h3> 
+                <img src="assets/images/icons8-charging-station-50.png" alt="black charger icon">
+                <h4>Level: <span class="5"></span></h4>
+                <h4>Distance from you: <span class="6"></span></h4>
+                <h4>Address: <span class="7"></span></h4>
+              </li>
 
-                <li class="card4">
-                  <h3>........</h3> 
-                  <img src="" alt="weather-icon">
-                  <h4>Temp: <span class="2"></span></h4>
-                  <h4>Wind: <span class="3"></span></h4>
-                  <h4>Humidity: <span class="4"></span></h4>
-                </li>
-
+              <li class="card4">
+                <h3>........</h3> 
+                <img src="assets/images/icons8-charging-station-50.png" alt="black charger icon">
+                <h4>Level: <span class="5"></span></h4>
+                <h4>Distance from you: <span class="6"></span></h4>
+                <h4>Address: <span class="7"></span></h4>
+              </li>
               </ul>
             </div>
+          <!-- -->
+<br></br>
 
+<div class ="days-forecast">
+  <h2> Weather: </h2>
+  <ul class="weather-cards">
+    <li class="card0">
+      <h3>........</h3> 
+      <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
+      <h4>Temp: <span class="2"></span></h4>
+      <h4>Wind: <span class="3"></span></h4>
+      <h4>Humidity: <span class="4"></span></h4>
+    </li>
 
+    <li class="card1">
+      <h3>........</h3> 
+      <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
+      <h4>Temp: <span class="2"></span></h4>
+    <h4>Wind: <span class="3"></span></h4>
+    <h4>Humidity: <span class="4"></span></h4>
+    </li>
 
-        </div>
+    <li class="card2">
 
+      <h3>........</h3>
+      <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
+      <h4>Temp: <span class="2"></span></h4>
+      <h4>Wind: <span class="3"></span></h4>
+      <h4>Humidity: <span class="4"></span></h4>
+    </li>
 
+    <li class="card3">
+      <h3>........</h3> 
+      <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
+      <h4>Temp: <span class="2"></span></h4>
+      <h4>Wind: <span class="3"></span></h4>
+      <h4>Humidity: <span class="4"></span></h4>
+    </li>
 
-    </div>
-    
+    <li class="card4">
+      <h3>........</h3> 
+      <img src="/Users/isabellvirrey/SuperTeam6/assets/images/—Pngtree—weather icon_4468240.png" alt="weather-icon">
+      <h4>Temp: <span class="2"></span></h4>
+      <h4>Wind: <span class="3"></span></h4>
+      <h4>Humidity: <span class="4"></span></h4>
+    </li></ul>
+  </div>
 
-
-
-
-
-
-        
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script
@@ -134,6 +166,32 @@
       crossorigin="anonymous"
     ></script>
 
+  <!-- Sarah trying js fetch request in html -->
+      <script>
+        const API_KEY = "42fc323d-4d1a-441d-a3cf-f4cf388c4ed2";
+        const latitude = "";
+        const longitude = "";
+        const OPENCHARGE_URL = `https://api.openchargemap.io/v3/poi/?output=json&key=${API_KEY}&latitude=${latitude}&longitude=${longitude}&distance=5`
+
+        fetch(OPENCHARGE_URL)
+        .then(function(response)
+        {
+          return response.json();
+        })
+        .then(function(data){
+          console.log(data);
+          console.log(latitude);
+          console.log(longitude);
+        })
+        
+      </script>
+
+
     <script src="./assets/js/script.js"></script>
+   
+  
+    <footer> <span>Thank you for charging!</span></footer>
+
   </body>
+
 </html>
