@@ -9,8 +9,6 @@ const current_Location = document.querySelector(".location-btn");
 const cityList =[];
 const butt_arr =[];
 
-
-
 var timeDisplayEl = $('#time-display');
 
 function displayTimeDashBoard()
@@ -24,8 +22,6 @@ displayTimeDashBoard();
 
 function getWeather(citiName,latitude,longtitude)
 {
- 
-  
     const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longtitude}&appid=${API_KEY}`;
     fetch(WEATHER_URL)
     .then(function(response)
