@@ -206,15 +206,16 @@ font-weight: bolder;
 
 
 
-.weather-cards img{
+.weather-cards img {
   width: 100%;
   margin-top: 5px 0 -12px 0;
   
 }
-
+.hidden {
+  visibility: hidden;
+}
 .days-forecast h2
 {
-
   font-size: 3rem;
   margin: 50px 0 0 0;
 }
@@ -229,12 +230,12 @@ font-weight: bolder;
 {
   background-image: linear-gradient(to bottom, orange, white);
   /* background-image: linear-gradient(to bottom, rgba(219, 82, 19, 0.221), rgb(9, 161, 237)); */
-  width: 180px;
-  text-align: center;
+  width: 20%;
+  text-align: left;
   border-radius: 10px;
   list-style: none;
+  padding: 10px 10px 10px 10px
 }
-
 .lead{
   animation: move 50s infinite linear; /* set the time to what you want of course */
 }

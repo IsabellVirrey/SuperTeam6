@@ -39,7 +39,7 @@ function getWeather(citiName,latitude,longtitude)
         $('.2').text((((data.main.temp- 273.15) * 9/5) + 32).toFixed(0)+"°F");
         $('.3').text(data.wind.speed);
         $('.4').text(data.main.humidity);
-        $('img').attr('src',`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
+        $('weather-icon').attr('src',`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
         $('.weather-icon h4').text(data.weather[0].description.toUpperCase());
         
     })
@@ -90,7 +90,8 @@ function getForecast(lat1,lon1)
 
 function getCitylocation()
 {
-      
+  $(".days-forecast").removeClass("hidden");
+  currentWeatherData.classList.remove("hidden");
         var cityName = cityInput.value.trim();
         if(!cityName) return; 
         const GEO_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;

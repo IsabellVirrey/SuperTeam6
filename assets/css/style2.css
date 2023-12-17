@@ -24,6 +24,9 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
+.card:hover {
+  box-shadow: 0 4px 8px 0 orange;
+}
 
 header {
   padding: 50px;
@@ -43,10 +46,6 @@ header {
   display: table;
 }
 
-.title {
-  color: grey;
-}
-
 .button {
   border: none;
   outline: 0;
@@ -60,7 +59,7 @@ header {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: orange;
 }
 
 @media screen and (max-width: 650px) {
@@ -69,3 +68,10 @@ header {
     display: block;
   }
 }
+footer {
+  display: flex;
+  background-color: none;
+  color: orange;
+  height: 50px;
+  justify-content: center;
+  }
