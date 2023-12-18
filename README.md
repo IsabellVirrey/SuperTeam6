@@ -33,13 +33,13 @@ Our website allows users to locate chargers within a 5, 10 , or 20 mile radius o
 - Additionally the SuperTeam6 Project goes above and beyond by providing users with the weather conditions at those locations!
 
 ### Screenshots
-![screen1](./assets/screenshots/Screenshot%202023-12-18%20at%202.26.10 PM.png)
+![screen1](./assets/images/Screenshot%202023-12-18%20at%202.26.10 PM.png)
 
-![screen2](./assets/screenshots/Screenshot%202023-12-18%20at%202.26.36 PM.png)
+![screen2](./assets/images/Screenshot%202023-12-18%20at%202.26.36 PM.png)
 
-![screen3](./assets/screenshots/Screenshot%202023-12-18%20at%202.27.12 PM.png)
+![screen3](./assets/images/Screenshot%202023-12-18%20at%202.27.12 PM.png)
 
-![screen4](./assets/screenshots/Screenshot%202023-12-18%20at%202.27.22 PM.png)
+![screen4](./assets/images/Screenshot%202023-12-18%20at%202.27.22 PM.png)
 
 ### Deployment
 [live](https://khoiphan-9194.github.io/charge-point/)
